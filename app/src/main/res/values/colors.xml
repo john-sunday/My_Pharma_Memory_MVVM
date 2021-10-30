@@ -7,4 +7,28 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <!-- Primary color: -->
+    <color name="amazon_0">#2A7E43</color>
+    <color name="amazon_3">#105E27</color>
+    <color name="amazon_complementary">#7D2964</color>
+    <color name="amazon_analogous_1">#297D6C</color>
+    <color name="amazon_analogous_2">#3A7D29</color>
+    <!-- Secondary 1 color: -->
+    <color name="chathams_blue_0">#265B6A</color>
+    <color name="chathams_blue_3">#0F414F</color>
+    <color name="chathams_blue_complementary">#6B3527</color>
+    <color name="chathams_blue_analogous_1">#273A6B </color>
+    <color name="chathams_blue_analogous_2">#276B58</color>
+    <!-- Secondary 2 color: -->
+    <color name="reno_sand_0">#AA7239</color>
+    <color name="reno_sand_3">#804B15</color>
+    <color name="reno_sand_complementary">#3A72AB</color>
+    <color name="reno_sand_analogous_1">#ABAB3A </color>
+    <color name="reno_sand_analogous_2">#AB3A3A</color>
+    <!-- Complementary color: -->
+    <color name="medium_carmine_0">#AA4839</color>
+    <color name="medium_carmine_3">#802415</color>
+    <color name="medium_carmine_complementary">#3A9CAB</color>
+    <color name="medium_carmine_analogous_1">#AB823A </color>
+    <color name="medium_carmine_analogous_2">#AB3A63</color>
 </resources>
