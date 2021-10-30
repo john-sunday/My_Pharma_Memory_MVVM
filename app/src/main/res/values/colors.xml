@@ -7,28 +7,24 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <!-- Primary color: -->
-    <color name="amazon_0">#2A7E43</color>
-    <color name="amazon_3">#105E27</color>
-    <color name="amazon_complementary">#7D2964</color>
-    <color name="amazon_analogous_1">#297D6C</color>
-    <color name="amazon_analogous_2">#3A7D29</color>
-    <!-- Secondary 1 color: -->
-    <color name="chathams_blue_0">#265B6A</color>
-    <color name="chathams_blue_3">#0F414F</color>
-    <color name="chathams_blue_complementary">#6B3527</color>
-    <color name="chathams_blue_analogous_1">#273A6B </color>
-    <color name="chathams_blue_analogous_2">#276B58</color>
-    <!-- Secondary 2 color: -->
-    <color name="reno_sand_0">#AA7239</color>
-    <color name="reno_sand_3">#804B15</color>
-    <color name="reno_sand_complementary">#3A72AB</color>
-    <color name="reno_sand_analogous_1">#ABAB3A </color>
-    <color name="reno_sand_analogous_2">#AB3A3A</color>
-    <!-- Complementary color: -->
-    <color name="medium_carmine_0">#AA4839</color>
-    <color name="medium_carmine_3">#802415</color>
-    <color name="medium_carmine_complementary">#3A9CAB</color>
-    <color name="medium_carmine_analogous_1">#AB823A </color>
-    <color name="medium_carmine_analogous_2">#AB3A63</color>
+
+    <color name="eggplant_light">#9F1575</color>
+    <color name="eggplant_principal">#84085F</color>
+    <color name="eggplant_dark">#6D004C</color>
+    <color name="forest_green_light">#3DB318</color>
+    <color name="forest_green_principal">#2A9409</color>
+    <color name="forest_green_dark">#1D7A00</color>
+    <color name="lucky_light">#D3CC1C</color>
+    <color name="lucky_principal">#AFA80B</color>
+    <color name="lucky_dark">#908B00</color>
+
+    <color name="persian_green_light">#249F9F</color>
+    <color name="persian_green_principal">#009999</color>
+    <color name="persian_green_dark">#007676</color>
+    <color name="orange_light">#FFBD39</color>
+    <color name="orange_principal">#FFAA00</color>
+    <color name="orange_dark">#C58300</color>
+    <color name="red_light">#FF3939</color>
+    <color name="red_principal">#FF0000</color>
+    <color name="red_dark">#C50000</color>
 </resources>

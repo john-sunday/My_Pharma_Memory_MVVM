@@ -15,12 +15,12 @@
     <!-- Base application theme 2 -->
     <style name="Theme.MyPharmaMemory2" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/amazon_complementary</item>
-        <item name="colorPrimaryVariant">@color/amazon_3</item>
+        <item name="colorPrimary">@color/eggplant_principal</item>
+        <item name="colorPrimaryVariant">@color/lucky_dark</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/reno_sand_0</item>
-        <item name="colorSecondaryVariant">@color/reno_sand_3</item>
+        <item name="colorSecondary">@color/persian_green_principal</item>
+        <item name="colorSecondaryVariant">@color/orange_dark</item>
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
