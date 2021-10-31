@@ -2,7 +2,7 @@
     <!-- Base application theme. -->
 
     <!-- Base application theme 2 -->
-    <style name="Theme.MyPharmaMemory2" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.MyPharmaMemory2" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/eggplant_principal</item>
         <item name="colorPrimaryVariant">@color/eggplant_dark</item>
