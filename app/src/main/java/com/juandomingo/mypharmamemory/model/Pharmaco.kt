@@ -1,4 +1,4 @@
-package com.juandomingo.mypharmamemory.ui.model
+package com.juandomingo.mypharmamemory.model
 
 data class Pharmaco(
     val pharmaName: String = "",
