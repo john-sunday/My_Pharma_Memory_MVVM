@@ -1,13 +1,14 @@
-package com.juandomingo.mypharmamemory.view
+package com.juandomingo.mypharmamemory.ui.view
 
 import android.os.Bundle
 import android.util.Log
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.isVisible
 import androidx.lifecycle.Observer
 import com.juandomingo.mypharmamemory.R
 import com.juandomingo.mypharmamemory.databinding.ActivityMainBinding
-import com.juandomingo.mypharmamemory.viewmodel.PharmaViewModel
+import com.juandomingo.mypharmamemory.ui.viewmodel.PharmaViewModel
 
 class MainActivity : AppCompatActivity() {
     private  lateinit var binding: ActivityMainBinding
@@ -28,21 +29,31 @@ class MainActivity : AppCompatActivity() {
         Thread.sleep(2000)
         super.onCreate(savedInstanceState)
 
-        pharmaViewModel.getPharmaListLiveData().observe(this, Observer {
+        pharmaViewModel.onCreate()
+
+        pharmaViewModel.pharmaModel.observe(this, Observer {
             /*  Todo lo que esté dentro del Observer, estará enganchado al
             *   LiveData, y cuando el LiveData tenga un cambio, se ejecutará
             *   todo lo que esté aquí dentro.   */
+            binding.tvQuote.text = it[0].quote
+            binding.tvAuthor.text = it[0].author
             for (pharma in it) {
-                Log.d("Pharmaceuticals", pharma.pharmaName)
+                Log.d("Pharmaceuticals", pharma.quote)
             }
             for ((index, value ) in it.withIndex()) {
-                Log.d("Pharmaceuticals $index", value.pharmaName)
+                Log.d("Pharmaceuticals $index", value.author)
             }
         })
+        pharmaViewModel.isLoading.observe(this, Observer {
+            binding.progressBarCircle.isVisible = it
+        })
+        pharmaViewModel.isLoading.observe(this, Observer {
+            binding.progressBarHor.isVisible = it
+        })
         binding.getListPharmaBtn.setOnClickListener {
-            pharmaViewModel.getPharmaList()
-        }
+            //pharmaViewModel.getPharmaList()
 
+        }
     }
 
 }
