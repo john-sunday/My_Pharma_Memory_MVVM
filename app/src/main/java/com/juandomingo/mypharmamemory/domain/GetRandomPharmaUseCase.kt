@@ -1,13 +1,16 @@
 package com.juandomingo.mypharmamemory.domain
 
-import com.juandomingo.mypharmamemory.data.PharmaRepository
 import com.juandomingo.mypharmamemory.data.model.PharmaProvider
 import com.juandomingo.mypharmamemory.data.model.PharmacoModel
+import javax.inject.Inject
 
-class GetRandomPharmaUseCase {
-    private val repository = PharmaRepository()
+// 4º paso Dagger Hilt -> preparamos las clases de casos de uso
+class GetRandomPharmaUseCase @Inject constructor(
+    private val pharmaProvider: PharmaProvider
+) {
+    //private val repository = PharmaRepository()
     operator fun invoke(): PharmacoModel? {
-        val pharmas = PharmaProvider.pharmas
+        val pharmas = pharmaProvider.pharmas
         /*  TODO hacer la val randomNumber global, para tener que
         *   escribir un solo return.    */
         if (!pharmas.isNullOrEmpty()) {

@@ -6,21 +6,32 @@ import androidx.lifecycle.viewModelScope
 import com.juandomingo.mypharmamemory.data.model.PharmacoModel
 import com.juandomingo.mypharmamemory.domain.GetListPharmaUseCase
 import com.juandomingo.mypharmamemory.domain.GetRandomPharmaUseCase
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
+import javax.inject.Inject
 
-class PharmaViewModel: ViewModel() {
+@HiltViewModel
+// 3er paso Dagger Hilt -> inyectamos variables de las clases de los casos de uso:
+class PharmaViewModel @Inject constructor(
+    private var getListPharmaUseCase: GetListPharmaUseCase,
+    private var getRandomPharmaUseCase: GetRandomPharmaUseCase
+) : ViewModel() {
     /*  'LiveData' permite suscribirse a un modelo de datos, avisando automáticamente
         cuando se realiza un cambio en el modelo de datos.*/
     val pharmaModel = MutableLiveData<List<PharmacoModel>>()
+    /*  Los casos de uso van inyectados con Dagger Hilt:
     var getListPharmaUseCase = GetListPharmaUseCase()
+    var getRandomPharmaUseCase = GetRandomPharmaUseCase()
+    */
     val isLoading = MutableLiveData<Boolean>()
     val isLoadingHor = MutableLiveData<Boolean>()
-    var getRandomPharmaUseCase = GetRandomPharmaUseCase()
+
     /*  En 'onCreate()' haremos la llamada al caso de uso que necesitemos, en este caso
     *   todas las quotes, para que todas esas quotes que recibe, las almacene en memoria.   */
     fun onCreate() {
-        /*  Para llamar a la corrutina de class.PharmaUseCase(), usaremos 'viewModelScope'
-        *   que nos permite crear las corrutinas, y se gestiona automaticamente.  */
+        /*  Para llamar a la corrutina de class.GetListPharmaUseCase(),
+            usaremos 'viewModelScope' que nos permite crear las corrutinas,
+            y se gestiona automaticamente.  */
         viewModelScope.launch {
             val result = getListPharmaUseCase()
             isLoading.postValue(true)
@@ -41,7 +52,7 @@ class PharmaViewModel: ViewModel() {
         /*  Llamamos a un nuevo caso de uso.    */
         val pharma = getRandomPharmaUseCase()
         if (pharma != null) {
-            pharmaModel.postValue(listOf(pharma!!))
+            pharmaModel.postValue(listOf(pharma))
         }
         isLoading.postValue(false)
     }
