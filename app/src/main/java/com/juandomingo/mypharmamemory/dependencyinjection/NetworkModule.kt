@@ -1,4 +1,4 @@
-package com.juandomingo.mypharmamemory.di
+package com.juandomingo.mypharmamemory.dependencyinjection
 
 import com.juandomingo.mypharmamemory.data.network.PharmaApiClient
 import dagger.Module
@@ -12,7 +12,7 @@ import javax.inject.Singleton
 /*  Este módulo nos va a facilitar dependencias que no sean tan fáciles de proveer
 *   como las anteriores -> @Inject constructor(). Es decir, estos módulos nos proveerán
 *   dependencias de bibliotecas y/o clases que contienen Interfaces.    */
-// 5º paso Dagger Hilt ->
+// 6º paso Dagger Hilt ->
 @Module
 /*  Podemos decirle el nivel de alcance(de Actividad, de Aplicación, etc)
 *   Es decir, cuanto tiempo queremos que dure la instancia o intancias que hemos
