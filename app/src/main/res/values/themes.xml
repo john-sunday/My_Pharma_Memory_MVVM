@@ -4,21 +4,32 @@
     <!-- Base application theme 2 -->
     <style name="Theme.MyPharmaMemory2" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/eggplant_principal</item>
-        <item name="colorPrimaryVariant">@color/eggplant_dark</item>
+        <item name="colorPrimary">@color/eggplant_light</item>
+        <item name="colorPrimaryVariant">@color/pastel_green</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/persian_green_principal</item>
-        <item name="colorSecondaryVariant">@color/persian_green_dark</item>
+        <item name="colorSecondaryVariant">@color/bittersweet</item>
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Accent color -->
         <item name="colorAccent">@color/orange_light</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
     </style>
     <!-- Splash screen theme -->
     <!-- Theme creation - 2º step -->
     <style name="SplashScreenTheme" parent="@style/Theme.MyPharmaMemory2">
-        <item name="android:windowBackground">@drawable/splashscreen</item>
+        <item name="android:windowBackground">@drawable/pill_magnifying_glass</item>
     </style>
+
+    <style name="Theme.MyPharmaMemory2.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.MyPharmaMemory2.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.MyPharmaMemory2.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

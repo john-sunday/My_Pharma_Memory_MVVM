@@ -1,11 +1,8 @@
 package com.juandomingo.mypharmamemory.ui.view
 
 import android.os.Bundle
-import android.util.Log
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.isVisible
-import androidx.lifecycle.Observer
 import com.juandomingo.mypharmamemory.R
 import com.juandomingo.mypharmamemory.databinding.ActivityMainBinding
 import com.juandomingo.mypharmamemory.ui.viewmodel.PharmaViewModel
@@ -39,7 +36,7 @@ class MainActivity : AppCompatActivity() {
 
         pharmaViewModel.onCreate()
 
-        pharmaViewModel.pharmaModel.observe(this, Observer {
+        /*pharmaViewModel.pharmaModel.observe(this, Observer {
             /*  Todo lo que esté dentro del Observer, estará enganchado al
             *   LiveData, y cuando el LiveData tenga un cambio, se ejecutará
             *   todo lo que esté aquí dentro.   */
@@ -61,8 +58,8 @@ class MainActivity : AppCompatActivity() {
         binding.getListPharmaBtn.setOnClickListener {
             //pharmaViewModel.getPharmaList()
             pharmaViewModel.randomPharma()
+        }*/
 
-        }
     }
 
 }

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bittersweet"
+    tools:context=".IntroMyPharmaFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_20dp" />
+
+    <TextView
+        android:id="@+id/tvMyInfoTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/eggplant_light"
+        android:gravity="center"
+        android:padding="@dimen/_20dp"
+        android:text="@string/mi_info_farmaco"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40dp" />
+
+    <TextView
+        android:id="@+id/tvMyInfoFullName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/eggplant_light"
+        android:minHeight="48dp"
+        android:paddingStart="@dimen/_16dp"
+        android:paddingEnd="@dimen/_0dp"
+        android:text="@string/nombre_completo_info"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_20dp" />
+
+    <TextView
+        android:id="@+id/tvInfoNatCod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/eggplant_light"
+        android:paddingStart="@dimen/_16dp"
+        android:paddingEnd="@dimen/_0dp"
+        android:text="@string/codigo_nacional_info"
+        android:textColor="#FFFFFFFF"
+        android:textSize="16sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_20dp" />
+
+    <TextView
+        android:id="@+id/tvInfoExpiryDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/eggplant_light"
+        android:paddingStart="@dimen/_16dp"
+        android:paddingEnd="@dimen/_0dp"
+        android:text="@string/fecha_de_caducidad_info"
+        android:textColor="#FFFFFFFF"
+        android:textSize="16sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_20dp" />
+
+    <TextView
+        android:id="@+id/tvInfoRoute"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/eggplant_light"
+        android:paddingStart="@dimen/_16dp"
+        android:paddingEnd="@dimen/_0dp"
+        android:text="@string/via_info"
+        android:textColor="#FFFFFFFF"
+        android:textSize="16sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_20dp" />
+
+    <TextView
+        android:id="@+id/tvInfoAilments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@color/eggplant_light"
+        android:paddingStart="@dimen/_16dp"
+        android:paddingEnd="@dimen/_0dp"
+        android:text="@string/dolencias_que_trata_info"
+        android:textColor="#FFFFFFFF"
+        android:textSize="16sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_20dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvInfoAilments"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="@dimen/_40dp"
+        android:paddingTop="@dimen/_8dp"
+        android:paddingEnd="@dimen/_0dp" />
+
+</LinearLayout>

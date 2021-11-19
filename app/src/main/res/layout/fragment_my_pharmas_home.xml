@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyPharmasHomeFragment"
+    android:background="@color/bittersweet" >
+
+
+    <TextView
+        android:id="@+id/tvMyPharmasHomeTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/eggplant_light"
+        android:gravity="center"
+        android:padding="@dimen/_20dp"
+        android:text="@string/mis_farmacos"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivMyPharmasHomeBlister"
+        android:layout_width="206dp"
+        android:layout_height="278dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="4dp"
+        android:src="@drawable/yellow_aspirine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivMyPharmasHomeBooks"
+        app:layout_constraintTop_toBottomOf="@+id/tvMyPharmasHomeTitle"
+        tools:ignore="ImageContrastCheck"
+        android:contentDescription="@string/blister_image" />
+
+    <ImageView
+        android:id="@+id/ivMyPharmasHomeBooks"
+        android:layout_width="186dp"
+        android:layout_height="280dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="15dp"
+        android:contentDescription="@string/books_and_magnifying_glass"
+        android:src="@drawable/books_magnifying_glass"
+        app:layout_constraintEnd_toStartOf="@+id/ivMyPharmasHomeBlister"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMyPharmasHomeTitle"
+        tools:ignore="ImageContrastCheck" />
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="183dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginBottom="80dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/btnMyPharmasHomeIntro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/introducir_nuevo_farmaco"
+            android:textColorHint="@color/white"
+            android:textSize="20sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_16dp" />
+
+        <Button
+            android:id="@+id/btnMyPharmasHomeList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/mostrar_mi_lista_de_farmacos"
+            android:textColorHint="@color/white"
+            android:textSize="20sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_16dp" />
+
+        <Button
+            android:id="@+id/btnMyPharmasHomeSearcher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/buscar_mi_farmaco"
+            android:textColorHint="@color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

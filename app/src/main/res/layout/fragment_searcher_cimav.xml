@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bittersweet"
+    tools:context=".SearcherMyPharmaFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <TextView
+        android:id="@+id/tvSearcherTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20dp"
+        android:background="@color/eggplant_light"
+        android:gravity="center"
+        android:padding="@dimen/_20dp"
+        android:text="@string/busca_farmaco_cimav"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/etmlSearcherPharma"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_40dp"
+        android:background="@color/eggplant_light"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/farmaco_a_buscar"
+
+        android:inputType="textMultiLine"
+        android:minHeight="48dp"
+        android:paddingStart="@dimen/_16dp"
+        android:paddingEnd="@dimen/_0dp"
+        android:paddingTop="10dp"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSearcherTitle"
+        android:autofillHints="Fármaco a buscar" />
+
+    <ImageView
+        android:id="@+id/ivMagnifyingGlass"
+        android:layout_width="209dp"
+        android:layout_height="252dp"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="99dp"
+        android:layout_marginEnd="101dp"
+        android:contentDescription="@string/magnifying_glass_image"
+        android:src="@drawable/magnifying_glass_blue_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etmlSearcherPharma"
+        tools:ignore="ImageContrastCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
