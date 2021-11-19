@@ -23,6 +23,13 @@
             android:id="@+id/action_appHomeFragment_to_loginFragment2"
             app:destination="@id/loginFragment2" />
     </fragment>
+    <activity
+        android:id="@+id/activityMain"
+        android:name="com.juandomingo.mypharmamemory.ui.view.MainActivity"
+        android:label="@string/menu_home"
+        tools:layout="@layout/activity_main">
+
+    </activity>
     <fragment
         android:id="@+id/codeLectorFragment"
         android:name="com.juandomingo.mypharmamemory.CodeLectorFragment"
@@ -35,6 +42,7 @@
             android:id="@+id/action_codeLectorFragment_to_pharmaLectorHtmlFragment"
             app:destination="@id/pharmaLectorHtmlFragment" />
     </fragment>
+
     <fragment
         android:id="@+id/myPharmasHomeFragment"
         android:name="com.juandomingo.mypharmamemory.MyPharmasHomeFragment"
