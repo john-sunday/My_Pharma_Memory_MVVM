@@ -6,21 +6,24 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import com.juandomingo.mypharmamemory.R
+import com.juandomingo.mypharmamemory.databinding.FragmentAppHomeBinding
+
 
 class AppHomeFragment : Fragment() {
+    private var _binding: FragmentAppHomeBinding? = null
+    private val binding get() = _binding!!
 
     companion object {
         fun newInstance() = AppHomeFragment()
     }
-
     private lateinit var viewModel: AppHomeViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_app_home, container, false)
+        _binding = FragmentAppHomeBinding.inflate(inflater, container, false)
+        return binding.root
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {

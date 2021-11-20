@@ -6,21 +6,24 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import com.juandomingo.mypharmamemory.R
+import com.juandomingo.mypharmamemory.databinding.FragmentInfoMyListPharmaBinding
+
 
 class InfoMyListPharmaFragment : Fragment() {
+    private var _binding: FragmentInfoMyListPharmaBinding? = null
+    private val binding get() = _binding!!
 
     companion object {
         fun newInstance() = InfoMyListPharmaFragment()
     }
-
     private lateinit var viewModel: InfoMyListPharmaViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_info_my_list_pharma, container, false)
+        _binding = FragmentInfoMyListPharmaBinding.inflate(inflater, container, false)
+        return binding.root
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {

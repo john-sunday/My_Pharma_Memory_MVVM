@@ -6,21 +6,24 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import com.juandomingo.mypharmamemory.R
+import com.juandomingo.mypharmamemory.databinding.FragmentPharmaLectorHtmlBinding
+
 
 class PharmaLectorHtmlFragment : Fragment() {
+    private var _binding: FragmentPharmaLectorHtmlBinding? = null
+    private val binding get() = _binding!!
 
     companion object {
         fun newInstance() = PharmaLectorHtmlFragment()
     }
-
     private lateinit var viewModel: PharmaLectorHtmlViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_pharma_lector_html, container, false)
+        _binding = FragmentPharmaLectorHtmlBinding.inflate(inflater, container, false)
+        return binding.root
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {

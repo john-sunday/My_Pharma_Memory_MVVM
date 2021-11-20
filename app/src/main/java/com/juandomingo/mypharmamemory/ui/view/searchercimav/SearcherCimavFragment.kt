@@ -6,21 +6,23 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import com.juandomingo.mypharmamemory.R
+import com.juandomingo.mypharmamemory.databinding.FragmentSearcherCimavBinding
 
 class SearcherCimavFragment : Fragment() {
+    private var _binding: FragmentSearcherCimavBinding? = null
+    private val binding get() = _binding!!
 
     companion object {
         fun newInstance() = SearcherCimavFragment()
     }
-
     private lateinit var viewModel: SearcherCimavViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_searcher_cimav, container, false)
+        _binding = FragmentSearcherCimavBinding.inflate(inflater, container, false)
+        return binding.root
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {

@@ -6,21 +6,23 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import com.juandomingo.mypharmamemory.R
+import com.juandomingo.mypharmamemory.databinding.FragmentCodeLectorBinding
 
 class CodeLectorFragment : Fragment() {
+    private var _binding: FragmentCodeLectorBinding? = null
+    private val binding get() = _binding!!
 
     companion object {
         fun newInstance() = CodeLectorFragment()
     }
-
     private lateinit var viewModel: CodeLectorViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_code_lector, container, false)
+        _binding = FragmentCodeLectorBinding.inflate(inflater, container, false)
+        return binding.root
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
