@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         /*  TODO Cuando tenga varias 'activity_.....xml' probar con 'binding.root',
             a ver si toma por defecto la main.xml   */
-        val view = binding.activityMain
+        val view = binding.root
         setContentView(view)
         Thread.sleep(2000)
         super.onCreate(savedInstanceState)

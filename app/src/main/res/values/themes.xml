@@ -21,7 +21,7 @@
     <!-- Splash screen theme -->
     <!-- Theme creation - 2º step -->
     <style name="SplashScreenTheme" parent="@style/Theme.MyPharmaMemory2">
-        <item name="android:windowBackground">@drawable/pill_magnifying_glass</item>
+        <item name="android:windowBackground">@drawable/splashscreen</item>
     </style>
 
     <style name="Theme.MyPharmaMemory2.NoActionBar">

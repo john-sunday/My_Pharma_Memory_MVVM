@@ -20,7 +20,7 @@ class CodeLectorFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.code_lector_fragment, container, false)
+        return inflater.inflate(R.layout.fragment_code_lector, container, false)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {

@@ -60,4 +60,6 @@
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
     <string name="title_activity_app_home2">AppHome2Activity</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_app_home">AppHomeActivity</string>
 </resources>
