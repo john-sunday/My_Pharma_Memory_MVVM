@@ -22,4 +22,5 @@
         android:name="com.juandomingo.mypharmamemory.ui.mypharma.MypharmaFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
+
 </navigation>
