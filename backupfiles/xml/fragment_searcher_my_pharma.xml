@@ -4,18 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@color/eggplant_light"
-    tools:context=".SearcherMyPharmaFragment">
-
-    <!-- TODO: Update blank fragment layout -->
+    tools:context=".ui.view.searchermypharma.SearcherMyPharmaFragment">
 
 
     <TextView
-        android:id="@+id/tvSearcherTitle"
+        android:id="@+id/tv_my_searcher_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_20dp"
+        android:layout_marginTop="@dimen/_40dp"
         android:background="@color/bittersweet"
         android:gravity="center"
         android:padding="@dimen/_20dp"
@@ -24,20 +21,20 @@
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
 
     <EditText
-        android:id="@+id/etmlSearcherPharma"
+        android:id="@+id/etml_my_searcher_pharma"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_40dp"
+        android:layout_marginTop="60dp"
         android:autofillHints="Medicamento para buscar"
         android:background="@color/bittersweet"
         android:ems="10"
         android:gravity="start|top"
-        android:hint="@string/farmaco_a_buscar"
 
+        android:hint="@string/farmaco_a_buscar"
         android:inputType="textMultiLine"
         android:minHeight="48dp"
         android:paddingStart="@dimen/_16dp"
@@ -45,19 +42,17 @@
         android:paddingEnd="@dimen/_0dp"
         android:textColorHint="#000000"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvSearcherTitle" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_my_searcher_title" />
 
     <ImageView
-        android:id="@+id/ivMagnifyingGlass"
+        android:id="@+id/iv_my_searcher_magnifying_glass"
         android:layout_width="209dp"
         android:layout_height="252dp"
-        android:layout_marginStart="101dp"
-        android:layout_marginTop="99dp"
-        android:layout_marginEnd="101dp"
+        android:layout_marginTop="112dp"
+        android:contentDescription="@string/magnifying_glass"
         android:src="@drawable/magnifying_glass_red_background"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etmlSearcherPharma"
-        android:contentDescription="@string/magnifying_glass" />
+        app:layout_constraintTop_toBottomOf="@+id/etml_my_searcher_pharma" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

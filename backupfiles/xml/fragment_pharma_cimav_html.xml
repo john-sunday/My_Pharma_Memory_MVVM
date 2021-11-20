@@ -3,9 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PharmaLectorHtmlFragment">
+    tools:context=".ui.view.pharmacimavhtml.PharmaCimavHtmlFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
         android:id="@+id/tvLector"
         android:layout_width="wrap_content"
