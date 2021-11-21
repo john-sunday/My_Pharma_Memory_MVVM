@@ -22,6 +22,12 @@ class LoginFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         _binding = FragmentLoginBinding.inflate(inflater, container, false)
+        binding.btnLoginAccess.setOnClickListener {
+
+        }
+
+
+
         return binding.root
     }
 

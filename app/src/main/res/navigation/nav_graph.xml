@@ -110,6 +110,9 @@
         <action
             android:id="@+id/action_infoMyPharmaFragment_to_searcherMyPharmaFragment"
             app:destination="@id/searcherMyPharmaFragment" />
+        <action
+            android:id="@+id/action_infoMyPharmaFragment_to_infoMyListPharmaFragment"
+            app:destination="@id/infoMyListPharmaFragment" />
     </fragment>
 
     <fragment
