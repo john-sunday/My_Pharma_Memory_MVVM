@@ -5,6 +5,7 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import com.juandomingo.mypharmamemory.R
 import com.juandomingo.mypharmamemory.databinding.ActivityMainBinding
+import com.juandomingo.mypharmamemory.ui.view.login.LoginFragment
 import com.juandomingo.mypharmamemory.ui.viewmodel.PharmaViewModel
 import dagger.hilt.android.AndroidEntryPoint
 // 2º paso Dagger Hilt:
@@ -59,7 +60,10 @@ class MainActivity : AppCompatActivity() {
             //pharmaViewModel.getPharmaList()
             pharmaViewModel.randomPharma()
         }*/
-
+        supportFragmentManager.beginTransaction().apply {
+            replace(R.id.navHostFragment, LoginFragment())
+            commit()
+        }
     }
 
 }

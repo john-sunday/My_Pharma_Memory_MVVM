@@ -12,13 +12,13 @@
         android:layout_height="@dimen/_40dp" />
 
     <TextView
-        android:id="@+id/tv_login_title"
+        android:id="@+id/tv_log_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/eggplant_light"
         android:gravity="center"
         android:padding="@dimen/_20dp"
-        android:text="@string/tvLoginTitle"
+        android:text="@string/mi_recuerda_farmaco"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
         android:textStyle="bold" />
@@ -28,12 +28,12 @@
         android:layout_height="@dimen/_40dp" />
 
     <EditText
-        android:id="@+id/et_login_email"
+        android:id="@+id/et_log_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:autofillHints="emailAddress"
         android:ems="10"
-        android:hint="@string/etLoginEmail"
+        android:hint="@string/email"
 
         android:inputType="textEmailAddress"
         android:minHeight="48dp"
@@ -45,14 +45,13 @@
         android:layout_height="@dimen/_16dp" />
 
     <EditText
-        android:id="@+id/et_login_password"
+        android:id="@+id/et_log_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:autofillHints="password"
         android:ems="10"
         android:textSize="20sp"
-        android:hint="@string/etLoginContrasenia"
-
+        android:hint="@string/contrasenia"
         android:inputType="textPassword"
         android:minHeight="48dp"
         android:textColorHint="#000000" />
@@ -67,11 +66,11 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/btn_login_access"
+            android:id="@+id/btn_log_access"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/btnLoginAccess"
+            android:text="@string/acceso"
             android:textColorHint="#FFFFFF"
             android:textSize="20sp" />
 
@@ -81,11 +80,11 @@
             android:layout_weight="1" />
 
         <Button
-            android:id="@+id/btn_login_register"
+            android:id="@+id/btn_log_register"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/btnRegister"
+            android:text="@string/registro"
             android:textColorHint="#FFFFFF"
             android:textSize="20sp" />
 
@@ -95,34 +94,34 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/_40dp" />
 
-    <ImageButton
-        android:id="@+id/btn_login_google"
+    <Button
+        android:id="@+id/btn_log_google"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@mipmap/ic_google"
-        android:background="@color/eggplant_light"
-        tools:ignore="SpeakableTextPresentCheck"
-        android:contentDescription="@string/google_icon" />
+        android:drawableLeft="@mipmap/ic_google"
+        android:text="@string/google"
+        android:textColorHint="#FFFFFF"
+        android:textSize="20sp" />
 
     <Space
         android:layout_width="match_parent"
         android:layout_height="@dimen/_20dp" />
 
-    <ImageButton
-        android:id="@+id/btn_login_facebook"
+    <Button
+        android:id="@+id/btn_log_facebook"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@mipmap/ic_facebook"
-        android:background="@color/eggplant_light"
-        tools:ignore="SpeakableTextPresentCheck2"
-        android:contentDescription="@string/facebook_icon" />
+        android:drawableLeft="@mipmap/ic_facebook"
+        android:text="@string/facebook"
+        android:textColorHint="#FFFFFF"
+        android:textSize="20sp" />
 
     <Space
         android:layout_width="match_parent"
         android:layout_height="@dimen/_40dp" />
 
     <Button
-        android:id="@+id/btn_login_logout"
+        android:id="@+id/btn_log_logout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/cerrar_sesion"

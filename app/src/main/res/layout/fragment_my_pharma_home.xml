@@ -12,10 +12,10 @@
         android:layout_height="@dimen/_20dp"
         android:layout_marginTop="10dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_my_pharma_home_title" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_myhome_title" />
 
     <TextView
-        android:id="@+id/tv_my_pharma_home_title"
+        android:id="@+id/tv_myhome_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_40dp"
@@ -36,10 +36,10 @@
         android:layout_marginTop="10dp"
         android:orientation="horizontal"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_my_pharma_home_title">
+        app:layout_constraintTop_toBottomOf="@+id/tv_myhome_title">
 
         <ImageView
-            android:id="@+id/iv_my_pharma_home_blister"
+            android:id="@+id/iv_myhome_blister"
             android:layout_width="206dp"
             android:layout_height="278dp"
             android:layout_marginTop="76dp"
@@ -48,7 +48,7 @@
             tools:ignore="ImageContrastCheck" />
 
         <ImageView
-            android:id="@+id/iv_my_pharma_home_books"
+            android:id="@+id/iv_myhome_books"
             android:layout_width="186dp"
             android:layout_height="280dp"
             android:layout_marginTop="76dp"
@@ -72,7 +72,7 @@
             android:layout_height="@dimen/_16dp" />
 
         <Button
-            android:id="@+id/btn_my_pharma_home_intro"
+            android:id="@+id/btn_myhome_intro"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/introducir_nuevo_farmaco"
@@ -84,7 +84,7 @@
             android:layout_height="@dimen/_16dp" />
 
         <Button
-            android:id="@+id/btn_my_pharma_home_list"
+            android:id="@+id/btn_myhome_list"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/mostrar_mi_lista_de_farmacos"
@@ -96,7 +96,7 @@
             android:layout_height="@dimen/_16dp" />
 
         <Button
-            android:id="@+id/btn_my_pharma_home_searcher"
+            android:id="@+id/btn_myhome_searcher"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/buscar_mi_farmaco"
