@@ -5,8 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_gravity="bottom"
-    >
+    android:layout_gravity="bottom">
 
         <ImageView
             android:id="@+id/iv_apphome_head"
