@@ -8,7 +8,8 @@
     android:background="@color/bittersweet"
     android:clickable="true"
     android:focusable="true"
-    android:padding="@dimen/_16dp">
+    android:padding="@dimen/_16dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
 
     <ImageView
         android:id="@+id/iv_nav_header"

@@ -12,9 +12,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyPharmaMemory2" >
-        <activity
-            android:name=".ui.view.CodeLectorActivity"
-            android:exported="false" />
+
         <activity
             android:name=".ui.view.MainActivity"
             android:exported="true"

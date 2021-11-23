@@ -18,18 +18,21 @@
         <entry key="..\:/Users/Admin/androidstudio-projects/pfc/MyPharmaMemory/app/src/main/res/layout-v23/app_home_nav_header.xml" value="0.25" />
         <entry key="..\:/Users/Admin/androidstudio-projects/pfc/MyPharmaMemory/app/src/main/res/layout/activity_app_home.xml" value="0.3625" />
         <entry key="..\:/Users/Admin/androidstudio-projects/pfc/MyPharmaMemory/app/src/main/res/layout/activity_app_home2.xml" value="0.36614583333333334" />
-        <entry key="..\:/Users/Admin/androidstudio-projects/pfc/MyPharmaMemory/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/Admin/androidstudio-projects/pfc/MyPharmaMemory/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/Users/Admin/androidstudio-projects/pfc/MyPharmaMemory/app/src/main/res/layout/activity_my_pharma_home.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/Admin/androidstudio-projects/pfc/MyPharmaMemory/app/src/main/res/layout/activity_nav_drawer.xml" value="0.1" />
         <entry key="..\:/Users/Admin/androidstudio-projects/pfc/MyPharmaMemory/app/src/main/res/layout/activity_xxxxxxxxxxxxxxxxxxxxxxxxxactivity2.xml" value="0.3484375" />
+        <entry key="..\:/Users/Admin/androidstudio-projects/pfc/MyPharmaMemory/app/src/main/res/layout/app_bar_main.xml" value="0.11666666666666667" />
         <entry key="..\:/Users/Admin/androidstudio-projects/pfc/MyPharmaMemory/app/src/main/res/layout/app_bar_nav_drawer.xml" value="0.25" />
         <entry key="..\:/Users/Admin/androidstudio-projects/pfc/MyPharmaMemory/app/src/main/res/layout/app_home_bar.xml" value="0.18" />
         <entry key="..\:/Users/Admin/androidstudio-projects/pfc/MyPharmaMemory/app/src/main/res/layout/app_home_fragment.xml" value="0.3625" />
         <entry key="..\:/Users/Admin/androidstudio-projects/pfc/MyPharmaMemory/app/src/main/res/layout/app_home_nav_header.xml" value="0.2545454545454545" />
         <entry key="..\:/Users/Admin/androidstudio-projects/pfc/MyPharmaMemory/app/src/main/res/layout/code_lector_fragment.xml" value="0.3484375" />
         <entry key="..\:/Users/Admin/androidstudio-projects/pfc/MyPharmaMemory/app/src/main/res/layout/content_nav_drawer.xml" value="0.1" />
-        <entry key="..\:/Users/Admin/androidstudio-projects/pfc/MyPharmaMemory/app/src/main/res/layout/fragment_app_home.xml" value="0.25" />
+        <entry key="..\:/Users/Admin/androidstudio-projects/pfc/MyPharmaMemory/app/src/main/res/layout/fragment_about.xml" value="0.13425925925925927" />
+        <entry key="..\:/Users/Admin/androidstudio-projects/pfc/MyPharmaMemory/app/src/main/res/layout/fragment_app_home.xml" value="0.1" />
         <entry key="..\:/Users/Admin/androidstudio-projects/pfc/MyPharmaMemory/app/src/main/res/layout/fragment_code_lector.xml" value="0.16414141414141414" />
+        <entry key="..\:/Users/Admin/androidstudio-projects/pfc/MyPharmaMemory/app/src/main/res/layout/fragment_contact.xml" value="0.13425925925925927" />
         <entry key="..\:/Users/Admin/androidstudio-projects/pfc/MyPharmaMemory/app/src/main/res/layout/fragment_gallery.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/Admin/androidstudio-projects/pfc/MyPharmaMemory/app/src/main/res/layout/fragment_home.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/Admin/androidstudio-projects/pfc/MyPharmaMemory/app/src/main/res/layout/fragment_info_my_list_pharma.xml" value="0.25" />
@@ -46,7 +49,7 @@
         <entry key="..\:/Users/Admin/androidstudio-projects/pfc/MyPharmaMemory/app/src/main/res/layout/fragment_slideshow.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/Admin/androidstudio-projects/pfc/MyPharmaMemory/app/src/main/res/layout/lector_code_fragment.xml" value="0.3484375" />
         <entry key="..\:/Users/Admin/androidstudio-projects/pfc/MyPharmaMemory/app/src/main/res/layout/login_fragment.xml" value="0.3625" />
-        <entry key="..\:/Users/Admin/androidstudio-projects/pfc/MyPharmaMemory/app/src/main/res/layout/nav_header.xml" value="0.25" />
+        <entry key="..\:/Users/Admin/androidstudio-projects/pfc/MyPharmaMemory/app/src/main/res/layout/nav_header.xml" value="0.2" />
         <entry key="..\:/Users/Admin/androidstudio-projects/pfc/MyPharmaMemory/app/src/main/res/layout/nav_header_nav_drawer.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/Admin/androidstudio-projects/pfc/MyPharmaMemory/app/src/main/res/menu/activity_main_drawer.xml" value="0.25" />
         <entry key="..\:/Users/Admin/androidstudio-projects/pfc/MyPharmaMemory/app/src/main/res/menu/app_hom.xml" value="0.3625" />
