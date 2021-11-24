@@ -13,7 +13,6 @@ import com.google.android.material.navigation.NavigationView
 import com.juandomingo.mypharmamemory.R
 import com.juandomingo.mypharmamemory.databinding.ActivityMainBinding
 import com.juandomingo.mypharmamemory.ui.view.about.AboutFragment
-import com.juandomingo.mypharmamemory.ui.view.apphome.AppHomeFragment
 import com.juandomingo.mypharmamemory.ui.view.cimavsearcher.CimavSearcherFragment
 import com.juandomingo.mypharmamemory.ui.view.codelector.CodeLectorFragment
 import com.juandomingo.mypharmamemory.ui.view.contact.ContactFragment
@@ -79,7 +78,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         }*/
         // Nav Host Fragment.
         supportFragmentManager.beginTransaction().apply {
-            replace(R.id.navHostFragment, AppHomeFragment())
+            replace(R.id.navHostFragment, LoginFragment())
             commit()
         }
 

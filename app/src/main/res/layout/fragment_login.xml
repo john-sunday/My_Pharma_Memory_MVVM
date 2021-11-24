@@ -27,19 +27,6 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/_40dp" />
 
-    <EditText
-        android:id="@+id/et_log_email"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:autofillHints="emailAddress"
-        android:ems="10"
-        android:hint="@string/email"
-
-        android:inputType="textEmailAddress"
-        android:minHeight="48dp"
-        android:textColorHint="#000000"
-        android:textSize="20sp" />
-
     <Space
         android:layout_width="match_parent"
         android:layout_height="@dimen/_16dp" />
@@ -48,13 +35,33 @@
         android:id="@+id/et_log_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_80dp"
+        android:layout_marginEnd="@dimen/_80dp"
         android:autofillHints="password"
+        android:cursorVisible="true"
         android:ems="10"
-        android:textSize="20sp"
         android:hint="@string/contrasenia"
         android:inputType="textPassword"
         android:minHeight="48dp"
-        android:textColorHint="#000000" />
+        android:textAlignment="viewStart"
+        android:textColorHint="#000000"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/et_log_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_80dp"
+        android:layout_marginEnd="@dimen/_80dp"
+        android:autofillHints="emailAddress"
+        android:cursorVisible="true"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textWebEmailAddress"
+        android:minHeight="48dp"
+        android:textColorHint="#000000"
+        android:textSize="20sp" />
 
     <Space
         android:layout_width="match_parent"
@@ -69,24 +76,26 @@
             android:id="@+id/btn_log_access"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_80dp"
             android:layout_weight="1"
             android:text="@string/acceso"
             android:textColorHint="#FFFFFF"
-            android:textSize="20sp" />
+            android:textSize="15sp" />
 
         <Space
             android:layout_width="wrap_content"
-            android:layout_height="40dp"
+            android:layout_height="@dimen/_40dp"
             android:layout_weight="1" />
 
         <Button
             android:id="@+id/btn_log_register"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_80dp"
             android:layout_weight="1"
             android:text="@string/registro"
             android:textColorHint="#FFFFFF"
-            android:textSize="20sp" />
+            android:textSize="15sp" />
 
     </LinearLayout>
 
@@ -98,6 +107,8 @@
         android:id="@+id/btn_log_google"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_80dp"
+        android:layout_marginEnd="@dimen/_80dp"
         android:drawableLeft="@mipmap/ic_google"
         android:text="@string/google"
         android:textColorHint="#FFFFFF"
@@ -111,6 +122,8 @@
         android:id="@+id/btn_log_facebook"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_80dp"
+        android:layout_marginEnd="@dimen/_80dp"
         android:drawableLeft="@mipmap/ic_facebook"
         android:text="@string/facebook"
         android:textColorHint="#FFFFFF"
@@ -124,6 +137,8 @@
         android:id="@+id/btn_log_logout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_80dp"
+        android:layout_marginEnd="@dimen/_80dp"
         android:text="@string/cerrar_sesion"
         android:textSize="20sp" />
 
