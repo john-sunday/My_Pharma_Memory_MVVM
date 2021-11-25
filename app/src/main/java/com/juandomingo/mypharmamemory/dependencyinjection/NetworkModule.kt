@@ -1,6 +1,5 @@
 package com.juandomingo.mypharmamemory.dependencyinjection
 
-import com.google.firebase.firestore.FirebaseFirestore
 import com.juandomingo.mypharmamemory.data.network.PharmaApiClient
 import dagger.Module
 import dagger.Provides
@@ -23,16 +22,7 @@ object NetworkModule {
             .addConverterFactory(GsonConverterFactory.create())
             .build()
     }
-
-    @Provides
-    @Singleton
-    fun provideFirestoreInstance() = FirebaseFirestore.getInstance()
-
-    @Provides
-    @Singleton
-    fun providePharmaList(
-        firestore: FirebaseFirestore
-    ) = firestore.collection("pharmas")
+    
 
 
     @Provides
