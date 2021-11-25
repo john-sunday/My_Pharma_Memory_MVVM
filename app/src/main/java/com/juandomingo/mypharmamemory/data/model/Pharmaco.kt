@@ -7,5 +7,11 @@ import com.google.gson.annotations.SerializedName
 *   en este modelo de datos. */
 data class Pharmaco(
     // Por si los parámetros no se llaman igual, serializamos éstos:
-    @SerializedName("quote") val quote: String,
-    @SerializedName("author") val author: String)
+    @SerializedName("full_name") val fullName: String,
+    @SerializedName("nac_code") val nacCode: Int,
+    @SerializedName("expiry_date") val expiryDate: String,
+    @SerializedName("admin_route") val adminRoute: String,
+    @SerializedName("ailments") val ailments: List<String>) {
+
+    constructor() : this("", 0, "", "", listOf<String>())
+}

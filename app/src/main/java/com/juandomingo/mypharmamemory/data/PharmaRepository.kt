@@ -1,6 +1,7 @@
 package com.juandomingo.mypharmamemory.data
 
 import com.juandomingo.mypharmamemory.data.model.PharmaProvider
+import com.juandomingo.mypharmamemory.data.model.Pharmaco
 import com.juandomingo.mypharmamemory.data.model.PharmacoModel
 import com.juandomingo.mypharmamemory.data.network.PharmaService
 import javax.inject.Inject
@@ -25,5 +26,9 @@ class PharmaRepository @Inject constructor(
             la clase Provider como una db.    */
         pharmaProvider.pharmas = response
         return response
+    }
+
+    fun addNewMyPharma(pharmaco: Pharmaco) {
+
     }
 }

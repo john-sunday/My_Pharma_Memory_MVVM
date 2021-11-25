@@ -50,9 +50,8 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         setContentView(view)
         Thread.sleep(2000)
         super.onCreate(savedInstanceState)
-
+        setDefaultFragment()
         pharmaViewModel.onCreate()
-
         /*pharmaViewModel.pharmaModel.observe(this, Observer {
             /*  Todo lo que esté dentro del Observer, estará enganchado al
             *   LiveData, y cuando el LiveData tenga un cambio, se ejecutará
@@ -76,12 +75,8 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             //pharmaViewModel.getPharmaList()
             pharmaViewModel.randomPharma()
         }*/
-        // Nav Host Fragment.
-        supportFragmentManager.beginTransaction().apply {
-            replace(R.id.navHostFragment, LoginFragment())
-            commit()
-        }
 
+        // Nav Host Fragment.
         val toolbar: Toolbar = findViewById(R.id.toolbar_main)
         setSupportActionBar(toolbar)
         drawer = findViewById(R.id.drawer_layout)
@@ -94,7 +89,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     }
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
-
         when (item.itemId) {
 
             R.id.nav_item_lector -> {
@@ -154,6 +148,12 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             return true
         }
         return super.onOptionsItemSelected(item)
+    }
+    fun setDefaultFragment(){
+        supportFragmentManager.beginTransaction().apply {
+            replace(R.id.navHostFragment, LoginFragment())
+            commit()
+        }
     }
 }
 

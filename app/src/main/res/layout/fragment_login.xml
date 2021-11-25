@@ -7,9 +7,7 @@
     android:background="@color/pastel_green"
     tools:context=".ui.view.login.LoginFragment">
 
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/_40dp" />
+
 
     <TextView
         android:id="@+id/tv_log_title"
@@ -27,6 +25,24 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/_40dp" />
 
+    <EditText
+        android:id="@+id/et_log_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_80dp"
+        android:layout_marginEnd="@dimen/_80dp"
+        android:autofillHints="emailAddress"
+        android:background="@drawable/input_shape"
+        android:cursorVisible="true"
+        android:drawableStart="@drawable/ic_baseline_email_24"
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textWebEmailAddress"
+        android:minHeight="48dp"
+        android:padding="@dimen/_16dp"
+        android:textColorHint="@color/white"
+        android:textSize="20sp" />
+
     <Space
         android:layout_width="match_parent"
         android:layout_height="@dimen/_16dp" />
@@ -38,29 +54,17 @@
         android:layout_marginStart="@dimen/_80dp"
         android:layout_marginEnd="@dimen/_80dp"
         android:autofillHints="password"
+        android:background="@drawable/input_shape"
         android:cursorVisible="true"
+        android:drawableStart="@drawable/ic_baseline_https_24"
         android:ems="10"
         android:hint="@string/contrasenia"
         android:inputType="textPassword"
         android:minHeight="48dp"
+        android:padding="@dimen/_16dp"
+        android:password="true"
         android:textAlignment="viewStart"
-        android:textColorHint="#000000"
-        android:textSize="20sp" />
-
-    <EditText
-        android:id="@+id/et_log_email"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/_80dp"
-        android:layout_marginEnd="@dimen/_80dp"
-        android:autofillHints="emailAddress"
-        android:cursorVisible="true"
-        android:drawableLeft="@drawable/ic_baseline_email_24"
-        android:ems="10"
-        android:hint="@string/email"
-        android:inputType="textWebEmailAddress"
-        android:minHeight="48dp"
-        android:textColorHint="#000000"
+        android:textColorHint="@color/white"
         android:textSize="20sp" />
 
     <Space
@@ -80,7 +84,7 @@
             android:layout_weight="1"
             android:text="@string/acceso"
             android:textColorHint="#FFFFFF"
-            android:textSize="15sp" />
+            android:textSize="18sp" />
 
         <Space
             android:layout_width="wrap_content"
@@ -95,7 +99,7 @@
             android:layout_weight="1"
             android:text="@string/registro"
             android:textColorHint="#FFFFFF"
-            android:textSize="15sp" />
+            android:textSize="18sp" />
 
     </LinearLayout>
 
@@ -106,7 +110,7 @@
     <Button
         android:id="@+id/btn_log_google"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="99dp"
         android:layout_marginStart="@dimen/_80dp"
         android:layout_marginEnd="@dimen/_80dp"
         android:drawableLeft="@mipmap/ic_google"

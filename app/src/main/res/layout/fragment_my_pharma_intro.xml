@@ -7,9 +7,7 @@
     android:background="@color/eggplant_light"
     tools:context=".ui.view.mypharmaintro.MyPharmaIntroFragment">
 
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/_40dp" />
+
 
     <TextView
         android:id="@+id/tv_intro_title"

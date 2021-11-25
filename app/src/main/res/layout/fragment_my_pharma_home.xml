@@ -7,18 +7,11 @@
     android:background="@color/bittersweet"
     tools:context=".ui.view.mypharmahome.MyPharmaHomeFragment">
 
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/_20dp"
-        android:layout_marginTop="10dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_myhome_title" />
 
     <TextView
         android:id="@+id/tv_myhome_title"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_40dp"
+        android:layout_height="0dp"
         android:background="@color/eggplant_light"
         android:gravity="center"
         android:padding="@dimen/_20dp"
